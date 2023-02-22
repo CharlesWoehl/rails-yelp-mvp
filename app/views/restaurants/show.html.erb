@@ -1,0 +1,14 @@
+<h1><%= @restaurant.name %></h1>
+<p>Category : <%= @restaurant.category %></p>
+<p>Adresse : <%= @restaurant.address %></p>
+<p>Tél : <%= @restaurant.phone_number %></p>
+
+<% @restaurant.reviews.each do |review| %>
+<div class="flash flash-success alert alert-dismissible fade show" role="alert">
+  <span><%= review.content %></span>
+  <a data-bs-dismiss="alert" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </a>
+</div>
+<% end %>
+<%= link_to 'Ajouter un avis', new_restaurant_review_path(@restaurant) %>

@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-
-Restaurant.create([{name: "Mama Mia !", address: "Venise la grande place", phone_number: "00000022", category: "italian"}, {name: "Chang aïe", address: "Paris 14eme", phone_number:  "0101012233", category:  "chinese"},
- {name: "Fujimata", address: "Loin d'ici", phone_number:  "123",  category: "japanese"}, {name: "Chez Ernest", address: "Rennes 35000", phone_number:  "0201012233",  category: "french"}, {name: "Une fois !", address: "rue de la patate", phone_number:  "33222", category: "belgian"}])
+# Restaurant.destroy_all
+# Restaurant.create([{name: "Mama Mia !", address: "Venise la grande place", phone_number: "00000022", category: "italian"}, {name: "Chang aïe", address: "Paris 14eme", phone_number:  "0101012233", category:  "chinese"},
+#  {name: "Fujimata", address: "Loin d'ici", phone_number:  "123",  category: "japanese"}, {name: "Chez Ernest", address: "Rennes 35000", phone_number:  "0201012233",  category: "french"}, {name: "Une fois !", address: "rue de la patate", phone_number:  "33222", category: "belgian"}])
+Review.create([{rating: 5, content: "Un vrai régal", restaurant_id: "1"}, {rating: 3, content: "Bof", restaurant_id: "1"}, {rating: 5, content: "Un vrai régal", restaurant_id: "3"}, {rating: 4, content: "Excquis", restaurant_id: "3"}])
